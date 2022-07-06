@@ -5,9 +5,9 @@ fetch("http://localhost:3000/api/products")
       const products = dataAPI;
       console.table(products);
 
-// Boucle article par index
+      // Boucle article par index
       for (let product in dataAPI) {
-       
+        
         // création de liens pour chaque articles
         let productLink = document.createElement("a");
         document.querySelector("#items").append(productLink);
