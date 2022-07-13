@@ -150,7 +150,7 @@ function deleteProduct() {
             let idDelete = productsInLocalStorage[i].idStored;
             let colorDelete = productsInLocalStorage[i].colorsStored;
 
-            productsInLocalStorage = productsInLocalStorage.fiter( element => element.idStored !== idDelete || element.colorsStored !== colorDelete);
+            productsInLocalStorage = productsInLocalStorage.filter( element => element.idStored !== idDelete || element.colorsStored !== colorDelete);
 
             localStorage.setItem("item", JSON.stringify(productsInLocalStorage));
 

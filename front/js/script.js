@@ -42,4 +42,3 @@ fetch("http://localhost:3000/api/products")
   console.log(error);
   alert(error);
 });
-
